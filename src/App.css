@@ -281,3 +281,225 @@ main {
   margin-bottom: 5px;
   color: azure;
 }
+
+/* Authentication styles */
+.auth {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1a1a2e;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.auth h2 {
+  color: #eee;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #bbb;
+  font-weight: 500;
+  text-align: left;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a3e;
+  color: #eee;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0f3460;
+  box-shadow: 0 0 0 2px rgba(15, 52, 96, 0.2);
+}
+
+.form-group input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  border: 1px solid #ff6b6b;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.auth-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0f3460;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.auth-button:hover:not(:disabled) {
+  background-color: #1a4d80;
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #eee;
+  background-color: #0f0f1e;
+}
+
+/* Ship component styles */
+.ship-config-form {
+  max-width: 400px;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  background-color: #1a1a2e;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ship-config-form h3 {
+  color: #eee;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ship-config-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.ship-config-form label {
+  display: block;
+  color: #bbb;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.ship-config-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a3e;
+  color: #eee;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.ship-config-form input:focus {
+  outline: none;
+  border-color: #0f3460;
+  box-shadow: 0 0 0 2px rgba(15, 52, 96, 0.2);
+}
+
+.save-ship-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0f3460;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.save-ship-button:hover:not(:disabled) {
+  background-color: #1a4d80;
+}
+
+.save-ship-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.save-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.save-message.success {
+  background-color: rgba(40, 167, 69, 0.1);
+  border: 1px solid #28a745;
+  color: #28a745;
+}
+
+.save-message.error {
+  background-color: rgba(220, 53, 69, 0.1);
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+/* Auth footer styles */
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.auth-link {
+  color: #0f3460;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #1a4d80;
+  text-decoration: underline;
+}

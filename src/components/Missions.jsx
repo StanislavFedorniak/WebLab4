@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { fetchMissions } from '../services/dbServices';
 
 function Missions() {
   const [difficulty, setDifficulty] = useState('усі');
@@ -13,25 +14,20 @@ function Missions() {
   const [formMessageType, setFormMessageType] = useState('');
 
   useEffect(() => {
-    const fetchMissions = async () => {
+    const loadMissions = async () => {
       try {
         setLoading(true);
-        const response = await fetch(process.env.PUBLIC_URL + '/data.json');
-        if (!response.ok) {
-          console.error(`HTTP Error: ${response.status} ${response.statusText}`);
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        const data = await response.json();
-        setMissions(data.expeditions);
+        const missionsData = await fetchMissions();
+        setMissions(missionsData);
       } catch (err) {
-        console.error('Error fetching missions data:', err);
+        console.error('Error fetching missions from Firestore:', err);
         setError(err.message);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchMissions();
+    loadMissions();
   }, []);
 
   const handleMissionSelect = (missionId) => {
