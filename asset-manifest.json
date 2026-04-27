@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WebLab4/static/css/main.ffc62b04.css",
+    "main.js": "/WebLab4/static/js/main.8b212845.js",
+    "static/js/453.6e4f956a.chunk.js": "/WebLab4/static/js/453.6e4f956a.chunk.js",
+    "index.html": "/WebLab4/index.html",
+    "main.ffc62b04.css.map": "/WebLab4/static/css/main.ffc62b04.css.map",
+    "main.8b212845.js.map": "/WebLab4/static/js/main.8b212845.js.map",
+    "453.6e4f956a.chunk.js.map": "/WebLab4/static/js/453.6e4f956a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffc62b04.css",
+    "static/js/main.8b212845.js"
+  ]
+}
